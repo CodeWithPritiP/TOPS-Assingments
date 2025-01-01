@@ -1,0 +1,110 @@
+@media screen and (min-width:576px) {
+
+    /* ======== common css ======= */
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* ======= header ========= */
+    header .navbar .menus {
+        flex: 3;
+        display: none;
+    }
+
+    header .navbar .end-nav .navbtn {
+        display: block;
+    }
+
+    header .navbar .end-nav .navbtn button {
+        display: block;
+        height: 33px;
+        width: 33px;
+        background: transparent;
+        border: 1px solid #6045FF;
+        color: #6045FF;
+        border-radius: 5px;
+    }
+
+    header .navbar .search {
+        display: block;
+    }
+
+    header .navbar .login {
+        display: block;
+    }
+
+    /* ===== homepage ====== */
+    .homepage .homepage-content h1 {
+        font-size: 45px;
+    }
+
+    .homepage .waveWrapper {
+        height: 130px;
+        margin-top: -50px;
+    }
+
+    .learn-course .learn-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 0px;
+    }
+
+    .ourfacilities .facilityDetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .latestnews .news {
+        display: flex;
+    }
+
+
+
+    .meetteacher .tec-p {
+        padding: 30px 10px;
+    }
+
+    .meetteacher .techaersdetails {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .meetteacher .techaersdetails .techdetails {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .meetteacher .techaersdetails .teacherphoto {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        flex: 1;
+    }
+
+    .Testimonial .content {
+        display: grid;
+        padding-top: 30px;
+        gap: 20px;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brands .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .footer-pad {
+        padding: 10px 10px;
+    }
+
+    .mainfoot .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}

@@ -1,0 +1,130 @@
+@media (min-width:992px) {
+
+    /* ======== common css ======= */
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    header .navbar .menus {
+        flex: 3;
+        display: flex;
+    }
+
+    header .navbar .end-nav .navbtn button {
+        display: none;
+    }
+
+    header .navbar .search {
+        display: block;
+    }
+
+    header .navbar .login {
+        display: block;
+    }
+
+    /* ===== homepage ====== */
+    .homepage .homepage-content h1 {
+        font-size: 55px;
+    }
+
+    .homepage .waveWrapper {
+        height: 180px;
+        margin-top: -100px;
+    }
+
+    .learn-course .learn-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .learn-course .learn-details .learn-text .price-r {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+
+    }
+
+    .learn-course .learn-details .learn-text .price-r .rattings {
+        color: #f88800;
+        margin-right: 80px;
+    }
+
+    .ourfacilities .facilityDetails .facilitymenu {
+        display: grid;
+        flex: 1;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ourfacilities .facilityDetails .facilitymenu {
+        display: grid;
+        flex: 1;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ourfacilities .fac-p {
+        padding: 100px;
+    }
+
+    .ourfacilities .facilityDetails {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .latestnews .news {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .meetteacher .tec-p {
+        padding: 50px 30px;
+    }
+
+    .meetteacher .techaersdetails {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .meetteacher .techaersdetails .techdetails {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .meetteacher .techaersdetails .teacherphoto {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        flex: 1;
+    }
+
+    .Testimonial .content {
+        display: grid;
+        padding-top: 30px;
+        gap: 20px;
+        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brands .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .footer-pad {
+        padding: 50px 30px;
+    }
+
+    .mainfoot .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}

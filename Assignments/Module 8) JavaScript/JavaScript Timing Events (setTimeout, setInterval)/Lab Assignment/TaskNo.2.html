@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        #mydiv {
+            font-size: 50px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a digital clock that updates every second using setInterval()</h1>
+    <div id="mydiv"></div>
+    <script>
+
+        function clock()
+        {   
+            var currentTime = new Date();
+
+            var hour=currentTime.getHours();
+            if(hour<10)
+            {
+                hour= '0' + hour;
+            }
+
+            var min=currentTime.getMinutes();
+            if(min<10)
+            {
+                min= '0' + min;
+            }
+
+            var sec=currentTime.getSeconds();
+            if(sec<10)
+            {
+                sec= '0' + sec;
+            }
+            document.getElementById('mydiv').textContent = hour + ":" + min + ":" + sec;
+        }
+        setInterval(clock,1000);
+        clock();
+
+    </script>
+</body>
+</html>

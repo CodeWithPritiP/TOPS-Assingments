@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f2f2f2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="todoInput" placeholder="Add new to-do" />
+    <button id="addButton">Add</button>
+    <ul id="todoList"></ul>
+    <script>
+    
+        const todoInput = document.getElementById('todoInput'); // Input field for to-dos
+        const addButton = document.getElementById('addButton'); // Button to add new to-do
+        const todoList = document.getElementById('todoList');   // List container for to-dos
+
+        // Function to save the to-do list in cookies
+        function saveToCookies(todos) {
+            document.cookie = `todos=${JSON.stringify(todos)}; path=/; max-age=${7 * 24 * 60 * 60}`;
+        }
+
+        // Function to load the to-do list from cookies
+        function loadFromCookies() {
+            const cookies = document.cookie.split('; ');
+            const todosCookie = cookies.find(cookie => cookie.startsWith('todos='));
+            if (todosCookie) {
+                return JSON.parse(todosCookie.split('=')[1]);
+            }
+            return [];
+        }
+
+        // Function to render the to-do list in the DOM
+        function renderTodos(todos) {
+            todoList.innerHTML = ''; // Clear the current list
+            todos.forEach(todo => {
+                const li = document.createElement('li');
+                li.textContent = todo;
+                todoList.appendChild(li);
+            });
+        }
+
+        // Add an event listener to the "Add" button
+        addButton.addEventListener('click', function () {
+            const newTodo = todoInput.value.trim(); // Get the input value and trim spaces
+            if (newTodo === '') {
+                alert('Please enter a valid to-do!');
+                return;
+            }
+
+            const todos = loadFromCookies(); // Load existing to-dos from cookies
+            todos.push(newTodo);             // Add the new to-do to the list
+            saveToCookies(todos);            // Save updated to-dos to cookies
+            renderTodos(todos);              // Update the DOM
+            todoInput.value = '';            // Clear the input field
+        });
+
+        // Initial render of to-dos from cookies when the page loads
+        window.addEventListener('load', function () {
+            const todos = loadFromCookies();
+            renderTodos(todos);
+        });
+
+    </script>
+</body>
+</html>

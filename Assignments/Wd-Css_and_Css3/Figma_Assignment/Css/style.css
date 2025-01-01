@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: white;
+}
+
+/* Header Styles */
+.header {
+    background-color: white;
+    padding: 20px;
+}
+.logo{  
+    padding-left: 100px;
+    font-family: 'Josefin Sans';
+    font-size: 28px;
+    font-weight: 500;
+}
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;    
+    font-weight: 500;
+}
+.nav-links {
+    margin-left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+.cta-buttons{
+    margin-right: 100px;
+}
+.cta-buttons a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.login {
+    color: #333;
+}
+.get-started {    
+    background-color: #ECE5FF;
+    color:#794CFF;
+    border-radius: 4px;
+}
+.navbtn {
+    display: none;
+    color: #1D2830;
+    font-size: 32px;
+    font-weight: 500;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('/Images/E1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.discount-label {
+    display: inline-flex;
+    align-items: center;  
+    background-color: #F2F9EB;  
+    border-radius: 50px;  
+    padding: 0px 20px 0px 0px;  
+    font-family: 'Inter', sans-serif;  
+    font-size: 18px;
+    color: #333; 
+    gap: 15px;  
+}
+
+.highlight {
+    background-color: #6fcf97;  
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px; 
+    font-weight: 600;  
+    font-size: 18px;
+}
+h1 {
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 72px;
+    color: #35414B;
+    line-height: 82px;
+}
+
+.description {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #4E5A65;
+    line-height: 32px;
+}
+
+.email-form {
+    margin-top: 50px;
+}
+
+.email-form input {
+    padding: 15px;
+    width: 350px;
+    font-size: 18px;
+    border: 1px solid #ECE5FF;
+    border-radius: 5px;
+}
+
+.email-form button {
+    padding: 18px 25px;
+    background-color: #794CFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.graphs {
+    padding: 50px 100px 0px 100px;
+}
+.graphs img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Trusted By */
+.trusted {
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+.trusted p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.logo-grid {
+    padding: 30px 120px 10px 120px;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.timline {
+    background-color: #FBFAFE;
+    display: flex;
+    gap: 50px;
+    margin: 50px 100px 0px 100px;
+    padding: 50px 100px;
+    align-items: center; 
+    justify-content: center;
+}
+.right {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.grid{
+    padding: 20px;
+}
+.grid h3{
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.grid p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.colorgrid{
+    background-color: #F6F3FC;
+    border-left: 5px solid #794CFF;
+}
+.easy{
+    text-align: center;
+    padding: 10px 20px; 
+    background-color: #fff;
+}
+.easy h1{
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+.easygrid{
+    padding-top: 20px;
+    font-family: "Inter" sans-serif;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+}
+.easygrid h3{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px 0px;
+}
+.easygrid p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.chart{
+    background-color: #F6F3FC;
+    background-clip:margin-box;
+    margin: 50px;
+    padding: 80px 100px;
+    display: flex;
+    font-family: "Inter" sans-serif;
+}
+.chart .left{
+    max-width: 500px;
+}
+.chart .left .content h3{
+    font-size: 40px;
+    line-height: 32px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: #35414B;
+}
+.chart .left .content p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.chart .left .content a{
+    background-color: #794CFF;
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+}
+/* Customer Profile Section */
+
+.customer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    max-width: 850px;
+}
+.customer h3{
+    font-size: 40px;    
+    font-weight: 500;
+    color: #35414B;
+}
+.customer p{
+    padding-top: 15px;
+    margin: 0px auto;
+    max-width: 500px;
+    color: #444444;
+}
+.user-profile{
+    display: block;
+}
+.main-cust{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.user-profile p{
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 0px;
+}
+.blue{
+    max-width: 950px;
+    display: flex; 
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+    border-radius: 16px;
+    background-color: #794CFF;
+}
+.blue h4{
+    padding: 5px 20px 0px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.blue .logos{
+    padding: 15px 20px 0px 20px;
+}
+
+/* Footer Section */
+ footer{
+  padding: 50px;
+    background-color: #1D2830;
+    background-clip: margin-box;
+}
+footer .grid{
+    color: white;
+    gap:50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer ul li{
+    padding: 8px;
+    list-style: none;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer .grid4{
+    text-align: center;
+}
+footer .end{
+    padding: 20px 20px 0px 20px;
+    color: white;
+    gap:50px;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+}
+footer .end .sm{
+    text-align: end;
+} 
+.showme{
+    display: none;
+}
