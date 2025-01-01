@@ -1,0 +1,905 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.padding-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Header CSS */
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1111;
+}
+
+header .header_pad {
+    padding: 20px 0px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+header .navbar .menus {
+    flex: 3;
+}
+
+header .navbar .menus ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .navbar .menus ul li {
+    padding: 10px;
+}
+
+header .navbar .menus ul li a {
+    color: rgb(96, 69, 255, 1);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+header .navbar .end-nav {
+    flex: 0.5;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navbar .end-nav a {
+    color: rgb(96, 69, 255, 1);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+header .navbar .end-nav .navbtn {
+    display: none;
+}
+
+/* Homepage */
+
+.homepage {
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.homepage-pad {
+    padding: 220px 0px;
+}
+
+.homepage .homepage-content {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.homepage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(96, 69, 255, 0.8), rgba(236, 87, 1, 0.7));
+    z-index: -1;
+}
+
+.homepage .homepage-content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.homepage .homepage-content p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px 10px;
+    text-transform: capitalize;
+}
+
+.homepage .homepage-content button {
+    border-radius: 30px;
+    border: transparent;
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(246, 245, 243);
+}
+
+.homepage .homepage-content button:hover {
+    color: black;
+    background-color: rgba(255, 161, 58, 1);
+    cursor: pointer;
+}
+
+.homepage .waveWrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+/* Learn Course */
+
+.learn-course .learn-title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.learn-course .learn-title h6 {
+    color: rgb(255, 161, 58);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.learn-course .learn-title h1 {
+    color: rgb(96, 69, 255);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.learn-course .learn-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.learn-course .learn-details .learn-img {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.learn-course .learn-details .learn-img .img-banner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #0251b8;
+    padding: 3px 10px;
+    border-radius: 40px;
+    color: white;
+}
+
+.learn-course .learn-details .learn-img .g1 {
+    height: auto;
+    max-width: 100%;
+    transition: 1s all ease-in-out;
+}
+
+.learn-course .learn-details .learn-grid:hover .g1 {
+    transform: scale(1.1);
+}
+
+.learn-course .learn-details .learn-img .g2 {
+    height: auto;
+    max-width: 100%;
+    transition: 1s all ease-in-out;
+}
+
+.learn-course .learn-details .learn-grid:hover .g2 {
+    transform: scale(1.1);
+}
+
+.learn-course .learn-details .learn-img .g3 {
+    height: auto;
+    max-width: 100%;
+    transition: 1s all ease-in-out;
+}
+
+.learn-course .learn-details .learn-grid:hover .g3 {
+    transform: scale(1.1);
+}
+
+.learn-course .learn-details .learn-text {
+    padding-top: 20px;
+}
+
+.learn-course .learn-details .learn-text .price-r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.learn-course .learn-details .learn-text .price-r .price {
+    font-size: 22px;
+    color: #2203d1;
+    font-weight: 600;
+}
+
+.learn-course .learn-details .learn-text .price-r .rattings {
+    color: #f88800;
+}
+
+.learn-course .learn-details .learn-text h3 a {
+    color: black;
+    font-size: 24px;
+    transition: 0.5s ease all;
+}
+
+.learn-course .learn-details .learn-text h3 a:hover {
+    color: #010372;
+}
+
+.learn-course .learn-details .learn-text .timing {
+    padding: 15px 0px;
+    display: flex;
+    gap: 25px;
+    color: grey;
+}
+
+.learn-course .learn-details .learn-text .divider {
+    height: 1.5px;
+    width: 100%;
+    background-color: rgba(163, 163, 163, 0.7);
+}
+
+.learn-course .learn-details .learn-text .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.learn-course .learn-details .learn-text .user-img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.learn-course .learn-details .learn-text .user-details {
+    align-items: center;
+}
+
+.learn-course .allcourse {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+    color: rgb(118, 118, 118);
+    text-transform: capitalize;
+}
+
+.learn-course .allcourse a {
+    color: rgb(240, 15, 15);
+}
+
+/* Our Facilities  */
+
+.ourfacilities {
+    background-color: aliceblue;
+}
+
+.ourfacilities .facilityDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.ourfacilities .fac-p {
+    padding: 100px;
+}
+
+.ourfacilities .facilityDetails .studyDetails {
+    flex: 1;
+}
+
+.ourfacilities .facilityDetails .studyDetails h5 {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #f88800;
+}
+
+.ourfacilities .facilityDetails .studyDetails h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    padding: 10px 0px;
+    color: rgb(96, 69, 255);
+}
+
+.ourfacilities .facilityDetails .studyDetails p {
+    font-size: 17px;
+    text-align: justify;
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+    color: rgb(129, 129, 129);
+}
+
+.ourfacilities .facilityDetails .studyDetails button {
+    border-radius: 30px;
+    border: transparent;
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 161, 58, 1);
+}
+
+.ourfacilities .facilityDetails .studyDetails button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(213, 111, 3);
+    cursor: pointer;
+}
+
+.ourfacilities .facilityDetails .facilitymenu {
+    display: grid;
+    flex: 1;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox {
+    height: auto;
+    width: fit-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox:hover {
+    box-shadow: 0px 3px 9px 0px #ece6e6;
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox .icon span {
+    font-size: 25px;
+    color: rgb(96, 69, 255);
+    padding-bottom: 17px;
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox .icon h3 {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox a {
+    color: #010126;
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox a:hover {
+    color: rgb(213, 111, 3);
+}
+
+.ourfacilities .facilityDetails .facilitymenu .gridbox p {
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    color: rgb(129, 129, 129);
+}
+
+/* Latest News */
+
+.latestnews .news-p {
+    padding: 50px 0px;
+}
+
+.latestnews .news-title h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(96, 69, 255);
+}
+
+.latestnews .news-title h6 {
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+    color: #f88800;
+}
+
+.latestnews .news {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.latestnews .news h2 a {
+    color: white;
+}
+
+.latestnews .news .leftnews {
+    flex: 1;
+}
+
+.latestnews .news .leftnews .banner1 {
+    background-image: url(../images/banner1.jpg);
+    height: 600px;
+    max-width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    align-content: flex-end;
+    transition: 0.6s all ease;
+}
+
+.latestnews .news .leftnews .banner1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.latestnews .news .leftnews .user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0px;
+    color: white;
+}
+
+.latestnews .news .rightnews .user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0px;
+    color: white;
+}
+
+.latestnews .news .leftnews .user a {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.latestnews .news .rightnews .user a {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.latestnews .news .leftnews .user img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.latestnews .news .rightnews .user img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.latestnews .news .rightnews {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.latestnews .news .rightnews .banner2 {
+    background-image: url(../images/banner2.jpg);
+    height: 290px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    align-content: flex-end;
+    transition: 0.6s all ease;
+}
+
+.latestnews .news .rightnews .banner3 {
+    background-image: url(../images/banner3.jpg);
+    height: 290px;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -1;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    transition: 0.6s all ease;
+}
+
+.latestnews .news .rightnews .banner2::after,
+.banner3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.latestnews .news .banner1:hover,
+.banner2:hover,
+.banner3:hover {
+    transform: translateY(10px);
+}
+
+/* Learn Online section */
+.learn-online {
+    background: url(../images/online1.png) no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.learn-online::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #191919b0, #000000a7);
+    z-index: -1;
+}
+
+.learn-online .onlinelearn-pad {
+    padding: 80px 172px;
+}
+
+.learn-online .learn-title {
+    text-align: center;
+    color: white;
+}
+
+.learn-online .learn-title p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+
+}
+
+.learn-online .learn-title h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+
+}
+
+.learn-online .learn-title .btn1 {
+    height: 50px;
+    width: 150px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 1s all ease;
+
+}
+
+.learn-online .learn-title .btn1:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.learn-online .learn-title .btn2 {
+    height: 50px;
+    width: 119px;
+    background: rgb(213, 111, 3);
+    border: 1px solid transparent;
+    border-radius: 40px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 1s all ease;
+
+}
+
+.learn-online .learn-title .btn2:hover {
+    background-color: rgb(213, 111, 3);
+
+}
+
+/* Our Teachers */
+.meetteacher {
+    background-color: whitesmoke;
+}
+
+.meetteacher .tec-p {
+    padding: 50px 30px;
+}
+
+.meetteacher .techaersdetails {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.meetteacher .techaersdetails .techdetails {
+    flex: 1;
+}
+
+.meetteacher .techaersdetails .teacherphoto {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1;
+}
+
+.meetteacher .techaersdetails .techgrid1 {
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+}
+
+.meetteacher .techaersdetails .techgrid1 img {
+    border-radius: 20px;
+    transition: ease-out 2s;
+    box-shadow: 1px 1px 0.2 red;
+    position: relative;
+}
+
+.meetteacher .techaersdetails .techgrid1 img:hover {
+    transform: scale(1.05);
+}
+
+.meetteacher .techaersdetails .techdetails h5 {
+    color: #f88800;
+    font-size: 18px;
+}
+
+.meetteacher .techaersdetails .techdetails h1 {
+    color: #2203d1;
+    text-transform: capitalize;
+    padding: 5px 0px;
+    font-size: 40px;
+}
+
+.meetteacher .techaersdetails .techdetails .btnnow {
+    height: 50px;
+    width: 150px;
+    background-color: #0251b8;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 1s all ease;
+}
+
+.meetteacher .techaersdetails .techdetails .btnnow:hover {
+    background-color: #010372;
+}
+
+.meetteacher .techaersdetails .techdetails p {
+    color: grey;
+    text-align: justify;
+    letter-spacing: 2;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.test-pad {
+    padding: 30px 20px;
+}
+
+.Testimonial {
+    background-color: rgb(235, 235, 235);
+}
+
+.Testimonial .testheader {
+    text-align: center;
+}
+
+.Testimonial .testheader h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #f88800;
+}
+
+.Testimonial .testheader h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #010372;
+}
+
+.Testimonial .content {
+    display: grid;
+    padding-top: 30px;
+    gap: 20px;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Testimonial .content .testgrid {
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    text-align: justify;
+}
+
+.Testimonial .content .testgrid p {
+
+    letter-spacing: 1.2;
+    color: rgb(230, 230, 230);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.Testimonial .content .testgrid .icon {
+    display: inline-block;
+    font-size: 17px;
+    padding-right: 10px;
+    color: rgb(88, 88, 88);
+}
+
+.Testimonial .content .testgrid .client-image {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Testimonial .content .testgrid .client-image img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.Testimonial .content .testgrid .client-image p {
+    color: #f88800;
+}
+
+.Testimonial .content .testgrid .client-image h2 {
+    color: #0d0d51;
+}
+
+/* Brands Section */
+
+.brands .brands-p {
+    padding: 50px 0px;
+}
+
+.brands .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.brands .brands-grid img {
+    height: auto;
+    max-width: 100%;
+    filter: contrast(0%);
+}
+
+.brands .brands-grid img:hover {
+    filter: contrast(100%);
+}
+
+.mainfoot {
+    background-color: #010126;
+}
+
+.footer-pad {
+    padding: 50px 30px;
+}
+
+.mainfoot .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.mainfoot .footer-grid .grid_head {
+    padding: 15px;
+}
+
+.mainfoot .footer-grid .grid_head h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.mainfoot .footer-grid .grid_head ul li {
+    padding-bottom: 15px;
+    color: rgb(167, 162, 162);
+    font-size: 17px;
+}
+
+.mainfoot .footer-grid .grid_head ul li a {
+    color: rgb(167, 162, 162);
+    text-transform: capitalize;
+
+}
+
+.mainfoot .footer-grid .grid_head ul li a:hover {
+    color: white;
+}
+
+.mainfoot .footer-grid .grid_head .socials {
+    display: flex;
+    gap: 20px;
+}
+
+.mainfoot .footer-grid .grid_head .icon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+
+}
+
+.mainfoot .footer-grid .grid_head .icon a {
+    color: rgb(167, 162, 162);
+}
+
+.mainfoot .footer-grid .grid_head .icon a:hover {
+    color: white
+}
+
+.mainfoot .footer-grid .grid_head img {
+    height: auto;
+    max-width: 100%;
+
+}
+
+.mainfoot .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(167, 162, 162);
+}
+
+.mainfoot .footer-copy {
+    padding: 20px;
+    text-align: center;
+    color: rgb(167, 162, 162);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <h3><pre> What are the different types of operators in JavaScript? Explain with examples.
+        • Arithmetic operators
+        • Assignment operators
+        • Comparison operators
+        • Logical operators</pre></h3>
+    <h5>Arithmetic operators</h5>
+    <p>Used to perform mathematical operations like addition, subtraction, etc.</p>
+    <pre>let a = 10, b = 3;
+        console.log("Addition:", a + b);  // 13
+        console.log("Subtraction:", a - b);  // 7
+        console.log("Multiplication:", a * b);  // 30
+        console.log("Division:", a / b);  // 3.333...
+        console.log("Remainder:", a % b);  // 1
+        </pre>
+    <h5>Assignment operators</h5>
+    <p>Used to assign values to variables.</p>
+    <pre>let x = 5;
+        x += 3;  // x = x + 3
+        console.log("After +=:", x);  // 8
+        x *= 2;  // x = x * 2
+        console.log("After *=:", x);  // 16
+        </pre>
+    <h5>Comparison operators</h5>
+    <p>Used to compare two values. They return a boolean result (true or false).</p>
+    <pre>let num1 = 5, num2 = "5", num3 = 3;
+        console.log(num1 == num2);  // true (loose equality)
+        console.log(num1 === num2); // false (strict equality)
+        console.log(num1 > num3);   // true
+        console.log(num1 <= num3);  // false
+        </pre>
+    <h5>Logical operators</h5>
+    <p>Used to combine multiple conditions.</p>
+    <pre>let age = 25;
+        console.log(age > 18 && age < 30);  // true (AND condition)
+        console.log(age > 30 || age < 18);  // false (OR condition)
+        console.log(!(age > 18));           // false (NOT condition)
+        </pre>
+
+</body>
+</html>
