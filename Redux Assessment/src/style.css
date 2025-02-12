@@ -1,0 +1,22 @@
+.maincon{
+    width: auto;
+    font-family:monospace;
+    left: 40%;
+    font-size: 18px;
+    position: absolute;
+    padding: 20px;
+    background-color: aliceblue;
+}
+.maincon input{
+    padding: 8px;
+    margin: 10px;   
+}
+.maincon button{
+    padding: 8px 13px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: tan;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
