@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": "dd01",
+      "fullname": "Priti Chauhan",
+      "email": "priti@gmail.com",
+      "password": "Priti@123"
+    }
+  ],
+  "men_products": [
+    {
+      "id": "1",
+      "name": "Lightening Lip Balm SPF15 | Vitamin E & Liquorice Oil",
+      "description": "Lightening Lip Balm SPF15 | Vitamin E & Liquorice Oil",
+      "image": "https://www.themancompany.com/cdn/shop/products/Untitled-2_2f5a578e-c119-40b5-b164-73481d8a1d8d_765x.jpg?v=1680846863",
+      "price": "650",
+      "category": "men"
+    },
+    {
+      "id": "2",
+      "name": "Eau De Parfum | Amour (50ml)",
+      "description": "For a gentleman who wears his heart on his sleeve and knows self-love is the greatest virtue.",
+      "image": "https://www.themancompany.com/cdn/shop/files/WhatsAppImage2022-01-11at1.34.52PM_a58cc840-3674-482d-9a76-1b51c0c6ddd7_765x.jpg?v=1695211857",
+      "price": "499",
+      "category": "men"
+    },
+    {
+      "id": "3",
+      "name": "Beard Oil | Almond & Thyme",
+      "description": "Beard Oil | Almond & Thyme",
+      "image": "https://www.themancompany.com/cdn/shop/products/2_7bfdae1e-010d-4f42-9c6b-e057d31f0a23_765x.jpg?v=1722870907",
+      "price": "370",
+      "category": "men"
+    },
+    {
+      "id": "4",
+      "name": "Charcoal Face Scrub | Charcoal & Eucalyptus",
+      "description": "Refresh and rejuvenate with the power of activated charcoal to get rid of blackheads & dead skin",
+      "image": "https://www.themancompany.com/cdn/shop/files/2_82d5ce96-6a30-4127-9784-ff3032a8e13f_765x.jpg?v=1696940629",
+      "price": "1050",
+      "category": "men"
+    },
+    {
+      "id": "5",
+      "name": "Charcoal Face Scrub | Charcoal & Eucalyptus",
+      "description": "Refresh and rejuvenate with the power of activated charcoal to get rid of blackheads & dead skin",
+      "image": "https://www.themancompany.com/cdn/shop/products/3_6e29dcdc-22da-4fe8-b71d-2e6cc4535fc4_765x.jpg?v=1666855982",
+      "price": "1250",
+      "category": "men"
+    },
+    {
+      "id": "6",
+      "name": "Anti-Pollution Sheet Mask (Multi Packs)",
+      "description": "Refresh and rejuvenate with the power of activated charcoal to get rid of blackheads & dead skin",
+      "image": "https://www.themancompany.com/cdn/shop/files/Anti-AcneFaceWash6_ccb303cb-19f0-43d5-ac13-9c29aa84052b_765x.jpg?v=1687326685",
+      "price": "160",
+      "category": "men"
+    },
+    {
+      "id": "7",
+      "name": "Charcoal Face Scrub | Charcoal & Eucalyptus",
+      "description": "Refresh and rejuvenate with the power of activated charcoal to get rid of blackheads & dead skin",
+      "image": "https://www.themancompany.com/cdn/shop/products/anti-pollution-sheet-mask-po2_765x.png?v=1666851356",
+      "price": "810",
+      "category": "men"
+    },
+    {
+      "id": "8",
+      "name": "Charcoal Face Aloevera Gel | Charcoal & Eucalyptus",
+      "description": "Refresh and rejuvenate with the power of activated charcoal to get rid of blackheads & dead skin",
+      "image": "https://www.themancompany.com/cdn/shop/files/2_35dbeded-674f-4da1-b29e-376b85a9cac2_765x.jpg?v=1702447876",
+      "price": "670",
+      "category": "men"
+    },
+    {
+      "id": "9",
+      "name": "Charcoal Soap Bar | Activated Charcoal",
+      "description": "Sportivo Pomade | Aloe Vera & Vitamin E",
+      "image": "https://www.themancompany.com/cdn/shop/products/3_43b004f6-1cdc-497c-b784-f4dcd26b521b_765x.png?v=1669886739",
+      "price": "295",
+      "category": "men"
+    },
+    {
+      "id": "10",
+      "name": "Hairfall Defence Shampoo (100ml)",
+      "description": "Hairfall Defence Shampoo (100ml)",
+      "image": "https://www.themancompany.com/cdn/shop/files/Hairfall_Defence_Shampoo_-_Primary_Images_1_copy_3_765x.jpg?v=1730786463",
+      "price": "325",
+      "category": "men"
+    }
+  ],
+  "women_products": [
+    {
+      "id": "1",
+      "name": "Plix Mood Range Knight Perfume 100ml",
+      "description": "Plix Mood Range Knight Perfume 100ml",
+      "image": "https://www.newu.in/cdn/shop/products/1_0ec66413-aa10-4a1e-8f17-2c4726630b16_1024x1024.jpg?v=1670933583",
+      "price": "8815",
+      "category": "women"
+    },
+    {
+      "id": "2",
+      "name": "Botanica Vit E Lavender Body Wash 250ml",
+      "description": "Botanica Vit E Lavender Body Wash 250ml",
+      "image": "https://www.newu.in/cdn/shop/files/30089442-01_1024x1024.jpg?v=1711544169",
+      "price": "599",
+      "category": "women"
+    },
+    {
+      "id": "3",
+      "name": "Neutrogena Rainbath RefrshngShr/BthGel473ml",
+      "description": "Neutrogena Rainbath RefrshngShr/BthGel473ml",
+      "image": "https://www.newu.in/cdn/shop/files/8906174410978_1_1024x1024.jpg?v=1733389282",
+      "price": "1040",
+      "category": "women"
+    },
+    {
+      "id": "4",
+      "name": "Botanica Vit E Lavender Body Wash 250ml",
+      "description": "Botanica Vit E Lavender Body Wash 250ml",
+      "image": "https://www.newu.in/cdn/shop/files/30093892_1024x1024.jpg?v=1733459322",
+      "price": "120",
+      "category": "women"
+    }
+  ],
+  "cart": []
+}
