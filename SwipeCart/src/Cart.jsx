@@ -4,7 +4,7 @@ import {
   fetchCart,
   updateCartQuantity,
   removeFromCart,
-} from "./TOLKIT/cartSlice";
+} from "./Toolkit/cartSlice";
 import { Container, Row, Col, Card, Button, Image } from "react-bootstrap";
 
 const Cart = () => {

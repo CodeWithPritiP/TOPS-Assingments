@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { FaShoppingCart, FaSignOutAlt } from 'react-icons/fa'
-import { Link, useNavigate } from "react-router-dom";
-import { fetchCart } from "./TOLKIT/cartSlice";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { FaShoppingCart, FaSignOutAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { fetchCart } from "./Toolkit/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 const Header = ({ setAuth, auth }) => {
@@ -14,8 +14,6 @@ const Header = ({ setAuth, auth }) => {
 
   const cartCount = useSelector((result) => {
     console.log(result.cart.items);
-    // some of quntity
-    // some only curreent use data
     let mycart = result.cart.items.filter((item) => {
       return item.userid == localStorage.getItem("id");
     });
@@ -37,12 +35,11 @@ const Header = ({ setAuth, auth }) => {
               )}
               <Nav.Link href="/home">Home</Nav.Link>
             </Nav>
-            {/* Cart Icon and Logout Button */}
             <Nav>
               {auth && (
                 <>
                   <Nav.Link href="/cart">
-                    <FaShoppingCart size={20} /> {/* Cart icon */}
+                    <FaShoppingCart size={20} />
                     <span className="ms-2">Cart- {cartCount} </span>{" "}
                   </Nav.Link>
                 </>
@@ -58,7 +55,7 @@ const Header = ({ setAuth, auth }) => {
                     variant="light"
                     className="ms-3"
                   >
-                    <FaSignOutAlt size={18} /> {/* Logout icon */}
+                    <FaSignOutAlt size={18} />
                     Logout
                   </Button>{" "}
                 </>
@@ -71,4 +68,4 @@ const Header = ({ setAuth, auth }) => {
   );
 };
 
-export default Header
+export default Header;

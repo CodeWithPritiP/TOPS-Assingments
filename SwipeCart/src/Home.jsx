@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
-import { addToCart, updateCart } from "./TOLKIT/cartSlice";
+import { addToCart, updateCart } from "./Toolkit/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 const Home = () => {
